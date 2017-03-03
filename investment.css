@@ -1,0 +1,41 @@
+body {
+	background-color: gray;
+}
+tr, td {
+	color: #FFFFFF;
+	font-size: 12px;
+	height: 65px;
+	width: 65px;
+	border: 2px solid #FFFFFF;
+}
+h3 {
+	text-align: center;
+	color: #FFFFFF;
+}
+table {
+	text-align: center;
+	display: table;
+	margin: 0 auto;
+}
+.table-container {
+	margin-top: 50px;
+}
+td.header {
+	text-align: center;
+	font-size: 14px;
+}
+.dim {
+	opacity: 0.4; 
+}
+.aa {
+	background-color: #ff0040;
+}
+.bb {
+	background-color: #027297;
+}
+.cc {
+	background-color: #be7f60;
+}
+.dd {
+	background-color: #7e261e;
+}

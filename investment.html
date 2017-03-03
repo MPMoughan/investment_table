@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Investment Table</title>
+	<link rel="stylesheet" type="text/css" href="Investment.css">
+</head>
+<body>
+	<div class="table-container">
+		<h3>Investment Classes</h3>
+		<table class="table-body">
+			<thead>
+				<tr>
+					<td class="header twenty-thirteen">2013</td>
+					<td class="header twenty-forteen">2014</td>
+					<td class="header twenty-fifteen">2015</td>
+					<td class="header twenty-sixteen">2016</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="aa">REIT<br>28.0%</td>
+					<td class="aa">REIT<br>2.8%</td>
+					<td class="aa">REIT<br>13.7%</td>
+					<td class="aa">REIT<br>13.7%</td>
+				</tr>
+				<tr>
+					<td class="bb">Lg Cap<br>32.4%</td>
+					<td class="bb">Lg Cap<br>32.4%</td>
+					<td class="bb">Lg Cap<br>32.4%</td>
+					<td class="bb">Lg Cap<br>32.4%</td>
+				</tr>
+				<tr>
+					<td class="cc">Int'l Stk<br>23.3%</td>
+					<td class="cc">Int'l Stk<br>23.3%</td>
+					<td class="cc">Int'l Stk<br>23.3%</td>
+					<td class="cc">Int'l Stk<br>23.3%</td>
+				</tr>
+				<tr>
+					<td class="dd">Sm Cap<br>23.3%</td>
+					<td class="dd">Sm Cap<br>23.3%</td>
+					<td class="dd">Sm Cap<br>23.3%</td>
+					<td class="dd">Sm Cap<br>23.3%</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+ 
+	$(document).ready(function(){
+		console.log('jquery is working!');
+	});
+
+	 $('td').hover(function(){
+	     $('td').not(this).each(function(){
+	         $('td').addClass('dim');
+	     });
+	     $(this).removeClass('dim');
+	});
+
+// $('td').hover(function(){
+//   $(this).addClass('highlight_this_cell');
+//   $(this).parent().addClass('highlight_tr');
+//   $(this).parent().find('td').addClass('highlight_td');
+// }
+
+
+$('td').hover(function(){
+     $('td').not().each(function(){
+         $('td').addClass('dim');
+         console.log()
+     });
+     $(this).removeClass('dim');
+});
+
+</script>
+</html>
